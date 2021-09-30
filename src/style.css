@@ -1,5 +1,5 @@
 :root {
-  --background: linear-gradient(135deg, #fbc6ff 20%, #bdfff9 90%);
+  --background: rgb(52, 147, 202);
 }
 *,
 *::before,
@@ -9,17 +9,20 @@
 
 body {
   margin: 0;
-  background: whitesmoke;
-  font-family: "Gluten", cursive;
+  background: white;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
 .content {
   height: 200vh;
-  background-color: #333;
+  background-color: rgb(210, 232, 245);
   background-blend-mode: multiply;
   background-size: cover;
   display: grid;
   place-items: center;
+}
+.logo {
+  color: white;
 }
 /*navigation styles start here*/
 
@@ -47,7 +50,7 @@ header {
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
   display: block;
-  background: whitesmoke;
+  background: white;
   height: 2px;
   width: 2em;
   border-radius: 2px;
@@ -83,13 +86,13 @@ nav li {
   margin-left: 1em;
 }
 nav a {
-  color: grey;
+  color: white;
   text-decoration: none;
   font-size: 1.2rem;
   text-transform: uppercase;
 }
 nav a:hover {
-  color: rgb(224, 64, 189);
+  color: rgb(224, 77, 18);
 }
 
 .nav-toggle:checked ~ nav {
