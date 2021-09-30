@@ -1,60 +1,51 @@
+:root {
+  --background: linear-gradient(135deg, #fbc6ff 20%, #bdfff9 90%);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  background: linear-gradient(135deg, #fbc6ff 20%, #bdfff9 90%);
+  background: whitesmoke;
   font-family: "Gluten", cursive;
   font-weight: 400;
 }
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-.logo {
-  float: left;
-  padding: 50px 0;
-}
+/*navigation styles start here*/
+
 header {
-  background: white;
+  background: var(--background);
+  text-align: center;
+  position: fixed;
+  z-index: 999; /*always on top of everything z-index*/
+  width: 100%;
 }
-header::after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
 nav {
-  float: right;
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: var(--background);
+  width: 100%;
 }
 nav ul {
-  margin: 30px;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
 nav li {
-  display: inline-block;
-  margin-left: 70px;
-  padding-top: 25px;
-  position: relative;
+  margin-bottom: 1em;
+  margin-left: 1em;
 }
 nav a {
-  color: rgb(70, 48, 65);
+  color: grey;
   text-decoration: none;
+  font-size: 1.2rem;
   text-transform: uppercase;
-  font-size: 14px;
 }
 nav a:hover {
-  color: hotpink;
-}
-nav a::before {
-  content: "";
-  display: block;
-  height: 5px;
-  background-color: hotpink;
-
-  position: absolute;
-  top: 0;
-  width: 0%;
-
-  transition: all ease-in-out 250ms;
-}
-nav a:hover::before {
-  width: 100%;
+  color: rgb(224, 64, 189);
 }
