@@ -13,6 +13,14 @@ body {
   font-family: "Gluten", cursive;
   font-weight: 400;
 }
+.content {
+  height: 200vh;
+  background-color: #333;
+  background-blend-mode: multiply;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
 /*navigation styles start here*/
 
 header {
@@ -30,6 +38,7 @@ nav {
   left: 0;
   background: var(--background);
   width: 100%;
+  display: none; /*navigation disappears, input bei Html muss vor nav stehen*/
 }
 nav ul {
   margin: 0;
@@ -48,4 +57,8 @@ nav a {
 }
 nav a:hover {
   color: rgb(224, 64, 189);
+}
+
+.nav-toggle:checked ~ nav {
+  display: block;
 }
