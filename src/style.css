@@ -1,5 +1,5 @@
 :root {
-  --background: rgb(52, 147, 202);
+  --background: rgb(248, 93, 70);
 }
 *,
 *::before,
@@ -15,7 +15,7 @@ body {
 }
 .content {
   height: 200vh;
-  background-color: rgb(210, 232, 245);
+  background-color: rgb(215, 228, 245);
   background-blend-mode: multiply;
   background-size: cover;
   display: grid;
@@ -92,7 +92,7 @@ nav a {
   text-transform: uppercase;
 }
 nav a:hover {
-  color: rgb(224, 77, 18);
+  color: rgb(31, 123, 182);
 }
 
 .nav-toggle:checked ~ nav {
